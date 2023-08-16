@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: angular-15-client-tutorialsonline
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/atul-fulambarkar-tenant/angular-app-test/angular-15-client-tutorialsonline@sha256:5ae16bcc9e0b2ea6cdd3b358875c7a96f6caa90b6a51ad3f1662a99bafb1ac98
+        name: container-image
+        resources: {}
+status: {}

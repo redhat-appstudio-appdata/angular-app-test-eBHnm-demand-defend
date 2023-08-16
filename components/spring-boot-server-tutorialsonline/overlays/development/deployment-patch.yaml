@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spring-boot-server-tutorialsonline
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/atul-fulambarkar-tenant/angular-app-test/spring-boot-server-tutorialsonline@sha256:cececc887123d4c4978f83609c1380a52aa79803210ca5808bbe0c1d8fe0143a
+        name: container-image
+        resources: {}
+status: {}
